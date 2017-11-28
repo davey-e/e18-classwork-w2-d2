@@ -17,4 +17,8 @@ class Bus
     @passengers.length()
   end
 
+  def add_passenger(person)
+      @passengers << person
+
+  end
 end
