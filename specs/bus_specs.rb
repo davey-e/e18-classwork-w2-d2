@@ -46,4 +46,10 @@ def test_remove_passenger
   assert_equal(expected, actual)
 end
 
+def test_remove_all_passengers
+  @bus.remove_all_passengers
+  expected = 0
+  actual = @bus.count_passengers
+  assert_equal(expected, actual)
+end
 end

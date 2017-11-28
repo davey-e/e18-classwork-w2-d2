@@ -29,4 +29,8 @@ class Bus
       end
     end
   end
+
+  def remove_all_passengers
+    @passengers.clear
+  end
 end
