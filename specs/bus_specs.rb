@@ -20,7 +20,11 @@ def test_bus_can_drive
 end
 
 def test_bus_has_passengers
+  expected = []
+  actual = @bus.passengers
+  assert_equal(expected, actual)
+end
+def test_count_passengers
   expected = 10
-  actual = @bus.has_passengers?
 end
 end

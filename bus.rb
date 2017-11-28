@@ -1,6 +1,6 @@
 class Bus
 
-  attr_reader :route_number
+  attr_reader :route_number, :destination, :passengers
 
   def initialize(route_number, destination, passengers)
     @route_number = route_number
@@ -12,7 +12,5 @@ class Bus
   def drive()
     return "Brum brum"
   end
-  def has_passengers?()
-    return @passengers
-  end
+
 end
