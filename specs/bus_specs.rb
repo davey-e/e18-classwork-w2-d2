@@ -25,6 +25,8 @@ def test_bus_has_passengers
   assert_equal(expected, actual)
 end
 def test_count_passengers
-  expected = 10
+  expected = 0
+  actual = @bus.count_passengers
+  assert_equal(expected, actual)
 end
 end
