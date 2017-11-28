@@ -21,4 +21,12 @@ class Bus
       @passengers << person
 
   end
+
+  def remove_passenger(person)
+    for passenger in @passengers
+      if passenger == person
+        @bus.delete(person)
+      end
+    end
+  end
 end
